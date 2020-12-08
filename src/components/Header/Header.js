@@ -3,7 +3,7 @@ import './Header.css';
 export default function Header(props) {
     return (
         <header className='Header'>
-            <h1>Exercise App</h1>
+            <h1>Exercise App Logo</h1>
             <nav>
                 <ul className='NavLinks'>
                     <li>Logout</li>
