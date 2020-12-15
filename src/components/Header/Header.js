@@ -2,18 +2,25 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 
 export default function Header(props) {
+
+    async function logout(event) {
+        event.preventDefault();
+        props.handleLogout();
+    }
+
     return (
         <header className='Header'>
             <Link to='/'>
-            <h1>Exercise App Logo</h1>
+            <h1> My Food Diary</h1>
             </Link>
             <nav>
                 <ul className='NavLinks'>
                     {
-                        props.user ?
+                        props.user.name ?
                         <> 
-                        <li><Link to='/logout'>Logout</Link></li>
+                        <li><Link to='/' onClick={logout}>Logout</Link></li>
                         <li><Link to='/dashboard'>Dashboard</Link></li>
+                        <li><Link to='/diets'>Food Entries</Link></li>
                         </>
                         :
                         <>

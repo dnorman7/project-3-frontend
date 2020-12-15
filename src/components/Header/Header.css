@@ -1,17 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 .Header {
-    background-color: #282c34;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fphotos%2Fscratched-breadboard-or-cutting-board-background-texture-picture-id170578804%3Fk%3D6%26m%3D170578804%26s%3D612x612%26w%3D0%26h%3DWRzh1E1eklkfX-rRY1QwI41c49zo13UO-dl-KNeg_IM%3D&f=1&nofb=1');
     padding-left: 10px;
     padding-right: 10px;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: rgb(139, 223, 139);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-size:cover;
 }
 
 .Header a {
     text-decoration: none;
-    color: rgb(139, 223, 139);
+    color: rgb(0, 0, 0);
+
 }
 
 .NavLinks {
@@ -20,5 +26,6 @@
 }
 
 .NavLinks li {
-    margin-right: 20px;
+    margin-right: 50px;
 }
+
