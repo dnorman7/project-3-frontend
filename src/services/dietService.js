@@ -1,7 +1,7 @@
 import { getToken, setToken, getUserFromToken } from './tokenService';
 
 
-const BASE_URL = 'http://localhost:3001/api/diet/';
+const BASE_URL = `${process.env.REACT_APP_API_URL}/api/diet/`;
 
 async function getDiet(id) {
     const response = await fetch(BASE_URL + `${id}`, {
